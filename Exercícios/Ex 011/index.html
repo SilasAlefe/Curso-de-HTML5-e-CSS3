@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+    <link rel="shortcut icon" href="favicon.SA.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tentarei abrir esse sie em vários dispositivos diferentes ou simplesmente aumentarei e diminuirei o tamanho do navegador</p>
+    
+    <picture>
+        <source media="(max-width: 723px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1023px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="foto g">
+        <!-- a ordem da tag <picture>é a foto base grande em baixo, a media em cima, a pequena em cima da média e assim vai-->
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--<audio src="Mídia/Los Encinos - Quincas Moreira.mp3" controls autoplay></audio> --><!--uma das formas de colocar-->
+    <!--Formatos compatíveis normalmente: MP3 WAV OGG-->
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="Mídia/Bossa Sonsa - Quincas Moreira.mp3" type="audio/MP3">
+        <!--
+        <source src="Mídia/Bossa Sonsa - Quincas Moreira.OGG" type="audio/OGG">
+        <source src="Mídia/Bossa Sonsa - Quincas Moreira.WAV" type="audio/WAV">
+        <p>Infelizmente seu navegador não suporta áudio</p>
+        Se o navegador não suportar o primeiro ele vai para o segundo e assim suscessivamente
+        -->
+    </audio>
+
+</body>
+</html>
