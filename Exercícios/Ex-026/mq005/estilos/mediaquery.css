@@ -10,7 +10,7 @@ Grandes Telas: acima de 1280px
 */
 
 
-@media screen and (min-width: 998px){
+@media screen and (min-width: 800px){
     #burguer{
         display: none;
     }
@@ -24,6 +24,6 @@ Grandes Telas: acima de 1280px
     }
 
     main{
-        width: 975px;
+        width: 750px;
     }
 }

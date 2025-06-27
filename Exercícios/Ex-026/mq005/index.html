@@ -39,11 +39,14 @@
     <script>
         var burguer = document.querySelector("#burguer")
         burguer.addEventListener('click', cliquemenu)
-        itens.style.display='none'
         function cliquemenu(){
+            if (itens.style.display==''){
+                itens.style.display='none'
+            }
+            
             if (itens.style.display=='none'){
                 itens.style.display='block'
-            } else{
+            } else {
                 itens.style.display='none'
             }
         }
