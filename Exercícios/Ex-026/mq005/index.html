@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="estilos/global.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
-<body>
+<body id="tamanho">
     <header>
         <h1>Meu Site</h1>
         <i class="material-icons" id="burguer">menu</i>
@@ -35,19 +36,27 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At veniam possimus reiciendis saepe laudantium ab deserunt aliquid laborum amet est dolor, eligendi commodi beatae assumenda sunt iusto culpa quibusdam incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptates repellat labore deserunt et dolore dolorum voluptatibus vero delectus consequuntur, dolorem assumenda nisi. Asperiores eveniet inventore rerum, molestias ipsum eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aspernatur incidunt voluptates odio quo eligendi dolorem aperiam quisquam, quia omnis ea at explicabo, suscipit voluptatibus animi earum ipsa tenetur quibusdam.</p>
         </article>
     </main>
-
     <script>
         var burguer = document.querySelector("#burguer")
         burguer.addEventListener('click', cliquemenu)
-
+        itens.style.display='none'
         function cliquemenu(){
             if (itens.style.display=='none'){
                 itens.style.display='block'
             } else{
                 itens.style.display='none'
             }
+        }
 
+        window.addEventListener('resize', mudoutamanho)
+        function mudoutamanho(){
+            if (window.innerWidth > 997){
+                itens.style.display='block'
+            } else{
+                itens.style.display='none'
+            }
         }
     </script>
+
 </body>
 </html>
