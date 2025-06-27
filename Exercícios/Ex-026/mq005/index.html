@@ -13,7 +13,7 @@
     <header>
         <h1>Meu Site</h1>
         <i class="material-icons" id="burguer">menu</i>
-        <menu>
+        <menu id="itens">
             <ul>
                 <li><a href="">Opção 1</a></li>
                 <li><a href="">Opção 2</a></li>
@@ -37,7 +37,17 @@
     </main>
 
     <script>
-        
+        var burguer = document.querySelector("#burguer")
+        burguer.addEventListener('click', cliquemenu)
+
+        function cliquemenu(){
+            if (itens.style.display=='none'){
+                itens.style.display='block'
+            } else{
+                itens.style.display='none'
+            }
+
+        }
     </script>
 </body>
 </html>
