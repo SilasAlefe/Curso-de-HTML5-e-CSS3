@@ -67,6 +67,7 @@ div#formulario > h1{
 div#formulario > p{
     font-size: 0.8em;
     margin: 20px 0px;
+    text-align: justify;
 }
 
 form > div.campo{
@@ -96,7 +97,6 @@ div.campo > input{
     font-size: 1em;
     height: 100%;
     width: calc(100% - 45px);
-    transform: translateY(-13px);
     border: 0px;
     border-radius: 8px;
     padding: 4px;
