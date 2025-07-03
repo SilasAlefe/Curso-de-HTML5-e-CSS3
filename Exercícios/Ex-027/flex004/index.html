@@ -8,18 +8,18 @@
     <style>
         div.container{
             background-color: lightsalmon;
-            height: 300px;
+            height: 200px;
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-evenly; /*Sempre usa como main-axis*/
-            align-items: stretch; /*Sempre usa como cross-axis | Para alinhar os seus conteúdos, usa-se o 'align-content' no respectivo filho.*/ 
+            flex-flow: row wrap;
+            justify-content: space-evenly; /*Sempre usa como referencia o main-axis*/
+            align-items: flex-end; /*Sempre usa como cross-axis | Para alinhar os seus conteúdos, usa-se o 'align-content' no respectivo filho.*/ 
         }
 
         div.item{
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            
+
         }
     </style>
 </head>
