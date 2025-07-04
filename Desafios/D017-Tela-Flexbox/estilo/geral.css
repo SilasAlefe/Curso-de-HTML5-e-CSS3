@@ -43,6 +43,10 @@ main section ul .itens-lista{
     border-radius: 5px;
 }
 
+main section ul .itens-lista:hover{
+    color: black;
+}
+
 section#conteudo{
     margin: auto;
 }
