@@ -1,19 +1,20 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 490px) {
     section#flex-container{
         flex-flow: column wrap;
         align-items: center;
     }
 
     main section ul{
-        flex-flow: column wrap;
+        flex-flow: row wrap;
+        align-items: stretch;
     }
 
     main section ul .itens-lista{
-        width: 90vw;
+        flex: 0 1 100%;
         text-align: center;
-        margin: 5px;
+        margin: 5px auto;
         padding: 8px;
     }
 }
